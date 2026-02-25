@@ -1,0 +1,516 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #fff3f8;
+}
+
+/* HERO */
+
+.beauty-hero {
+    background: linear-gradient(135deg, #ff6a88, #ff99ac);
+    color: white;
+    text-align: center;
+    padding: 35px;
+}
+
+/* TIMER */
+
+.timer-box {
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* CATEGORY CHIPS */
+
+.cats {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.cats button {
+    border: none;
+    padding: 10px 22px;
+    border-radius: 25px;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.cats button:hover,
+.cats button.active {
+    background: #ff4f8b;
+    color: white;
+    transform: translateY(-4px);
+}
+
+/* HOT */
+
+.hot {
+    margin-left: 20px;
+}
+
+/* PRODUCTS */
+
+#products {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(248px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
+    position: relative;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 470px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.card h4 {
+    margin: 8px 0;
+}
+
+.card p {
+    color: #ff4f8b;
+    font-weight: bold;
+}
+
+.card::before {
+    content: "HOT";
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: red;
+    color: white;
+    font-size: 11px;
+    padding: 3px 7px;
+    border-radius: 8px;
+}
+
+/* PROMO BANNERS */
+
+.beauty-banners {
+    display: grid;
+    gap: 15px;
+    padding: 20px;
+}
+
+.beauty-banners img {
+    width: 100%;
+    border-radius: 18px;
+}
+
+/* MOBILE */
+
+@media(max-width:600px) {
+    .card img {
+        height: 150px;
+    }
+}
+
+.budget-title {
+    margin: 20px;
+    font-size: 24px;
+}
+
+/* GRID */
+
+.budget-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* CARD */
+
+.budget-card {
+    height: 160px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #ffe29f, #ffc94d);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #7b1c1c;
+    font-size: 22px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, .2);
+    transition: .3s;
+    cursor: pointer;
+}
+
+/* PRICE */
+
+.budget-card span {
+    font-size: 40px;
+}
+
+/* OFF */
+
+.budget-card small {
+    font-size: 18px;
+    display: block;
+}
+
+/* HOVER */
+
+.budget-card:hover {
+    transform: translateY(-8px) scale(1.05);
+}
+
+/* MOBILE */
+
+@media(max-width:600px) {
+    .budget-card {
+        height: 130px;
+        font-size: 18px;
+    }
+
+    .budget-card span {
+        font-size: 32px;
+    }
+}
+
+/* ELECTRONICS HERO */
+
+.electro-hero {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    background-size: 400% 400%;
+    animation: hero 8s infinite;
+    color: white;
+    text-align: center;
+    padding: 45px;
+}
+
+/* Tech glow on cards */
+
+.card:hover {
+    box-shadow: 0 0 20px #00c6ff;
+}
+
+/* Budget cards tech style */
+
+.budget-card {
+    background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+    color: #003366;
+}
+
+/* Hot title tech */
+
+.hot {
+    color: #00c6ff;
+}
+
+body {
+    transition: .5s;
+}
+
+.page-exit {
+    opacity: 0;
+    transform: scale(.9);
+}
+
+.page-enter {
+    animation: enter .6s ease;
+}
+
+@keyframes enter {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* =========================
+   HOLI BEAUTY FESTIVE THEME
+========================= */
+
+/* Gulal background */
+body {
+    background: linear-gradient(120deg, #fff1eb, #ace0f9);
+}
+
+/* Hero animated holi gradient */
+.beauty-hero {
+    background: linear-gradient(135deg, #ff1744, #ff9100, #00e5ff, #76ff03, #d500f9);
+    background-size: 400% 400%;
+    animation: holiHero 8s infinite;
+}
+
+@keyframes holiHero {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+/* Timer festive */
+.timer-box {
+    background: #ffea00;
+    color: black;
+}
+
+/* Category chips colorful */
+.cats button {
+    background: linear-gradient(135deg, #fff, #ffe0f0);
+}
+
+.cats button:hover,
+.cats button.active {
+    background: linear-gradient(135deg, #ff0080, #ffea00);
+    color: black;
+}
+
+/* Product glow */
+.card:hover {
+    box-shadow: 0 0 22px rgba(255, 0, 120, .7);
+}
+
+/* Budget cards Holi shade */
+.budget-card {
+    background: linear-gradient(135deg, #ffcc80, #ff8a65);
+}
+
+/* HOT title rainbow */
+.hot {
+    background: linear-gradient(90deg, #ff1744, #ff9100, #00e5ff);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Promo banners soft glow */
+.beauty-banners img {
+    box-shadow: 0 0 15px rgba(255, 0, 120, .4);
+}
+
+/* Holi gulal splashes */
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background:
+        radial-gradient(circle at 20% 30%, rgba(255, 0, 0, .25), transparent 30%),
+        radial-gradient(circle at 70% 40%, rgba(0, 255, 255, .25), transparent 30%),
+        radial-gradient(circle at 50% 70%, rgba(255, 255, 0, .25), transparent 35%);
+}
+
+/* Floating color dots */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background:
+        radial-gradient(circle at 10% 80%, rgba(138, 43, 226, .3), transparent 25%),
+        radial-gradient(circle at 90% 20%, rgba(0, 255, 127, .3), transparent 25%);
+}
+
+/* =========================
+   BEAUTY MOBILE FIX
+========================= */
+
+@media(max-width:768px) {
+
+    /* Hero smaller */
+    .beauty-hero {
+        padding: 20px;
+    }
+
+    /* Category chips swipe */
+    .cats {
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        padding: 10px;
+    }
+
+    .cats::-webkit-scrollbar {
+        display: none;
+    }
+
+    .cats button {
+        padding: 8px 14px;
+        font-size: 13px;
+    }
+
+    /* Products grid 2 per row */
+    #products {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        padding: 12px;
+    }
+
+    /* Product images */
+    .card img {
+        height: 180px;
+    }
+
+    /* Cards padding */
+    .card {
+        padding: 8px;
+    }
+
+    /* Promo banners */
+    .beauty-banners {
+        padding: 10px;
+    }
+
+    .beauty-banners img {
+        border-radius: 12px;
+    }
+
+    /* Budget grid */
+    .budget-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    /* Budget cards */
+    .budget-card {
+        height: 120px;
+        font-size: 16px;
+    }
+
+    .budget-card span {
+        font-size: 26px;
+    }
+
+    /* Titles center */
+    .hot,
+    .budget-title {
+        text-align: center;
+    }
+
+}
+
+/* Extra small phones */
+
+@media(max-width:480px) {
+
+    #products {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card img {
+        height: 150px;
+    }
+
+    .timer-box {
+        font-size: 13px;
+    }
+
+    .budget-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================
+   BEAUTY ADD TO CART STYLE
+========================= */
+
+.card button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #ff1744, #ff9100, #00e5ff, #d500f9);
+    background-size: 300% 300%;
+    animation: cartGlow 4s infinite;
+    position: relative;
+    overflow: hidden;
+}
+
+/* flowing gradient */
+@keyframes cartGlow {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+/* shine swipe */
+.card button::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, .6), transparent);
+    transform: translateX(-100%);
+    animation: shineBtn 3s infinite;
+}
+
+@keyframes shineBtn {
+    from {
+        transform: translateX(-100%)
+    }
+
+    to {
+        transform: translateX(100%)
+    }
+}
+
+/* hover pop */
+.card button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 0, 120, .8);
+}
+
+/* click effect */
+.card button:active {
+    transform: scale(.95);
+}
+
+/* mobile size */
+
+@media(max-width:600px) {
+    .card button {
+        font-size: 13px;
+        padding: 8px;
+    }
+}

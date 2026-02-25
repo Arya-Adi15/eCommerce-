@@ -1,0 +1,421 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f2f5ff;
+}
+
+/* BANNER */
+
+.banner {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+/* TIMER */
+
+.timer-box {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* CATEGORIES */
+
+.cats {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.cats button {
+    border: none;
+    padding: 10px 25px;
+    border-radius: 30px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.cats button:hover {
+    background: #0072ff;
+    color: white;
+    transform: translateY(-5px);
+}
+
+/* HOT */
+
+.hot {
+    margin-left: 20px;
+}
+
+/* PRODUCTS */
+
+#products {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
+    transition: .3s;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.card h4 {
+    margin: 8px 0;
+}
+
+.card p {
+    color: green;
+    font-weight: bold;
+}
+
+.deal {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: red;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+/* MOBILE */
+
+@media(max-width:600px) {
+    .card img {
+        height: 160px;
+    }
+}
+
+.banner-hot {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+/* Hover zoom */
+
+.hero-banner:hover img {
+    transform: scale(1.05);
+}
+
+.shop-title {
+    margin-left: 20px;
+    font-size: 22px;
+}
+
+
+body {
+    transition: .5s;
+}
+
+.page-exit {
+    opacity: 0;
+    transform: scale(.9);
+}
+
+.page-enter {
+    animation: enter .6s ease;
+}
+
+@keyframes enter {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+
+
+/* =========================
+   ELECTRONIC HOLI TECH MODE
+========================= */
+
+/* Neon tech background */
+body {
+    background: linear-gradient(120deg, #0f2027, #203a43, #2c5364, #6a11cb, #2575fc);
+    background-size: 300% 300%;
+    animation: techbg 12s infinite alternate;
+}
+
+@keyframes techbg {
+    from {
+        background-position: 0% 0%
+    }
+
+    to {
+        background-position: 100% 100%
+    }
+}
+
+/* Banner rainbow tech */
+.banner {
+    background: linear-gradient(135deg, #00c6ff, #0072ff, #ff00cc, #333399);
+    background-size: 400% 400%;
+    animation: techBanner 8s infinite;
+}
+
+@keyframes techBanner {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+/* Timer neon */
+.timer-box {
+    background: #00e5ff;
+    color: black;
+}
+
+/* Category cyber glow */
+.cats button {
+    background: rgba(255, 255, 255, .9);
+}
+
+.cats button:hover {
+    background: #00e5ff;
+    color: black;
+    box-shadow: 0 0 15px #00e5ff;
+}
+
+/* Product hologram glow */
+.card:hover {
+    box-shadow: 0 0 20px #00e5ff, 0 0 40px #ff00cc;
+}
+
+/* Deal pulse */
+.deal {
+    animation: pulseDeal 1.5s infinite;
+}
+
+@keyframes pulseDeal {
+
+    0%,
+    100% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(1.2)
+    }
+}
+
+/* Flying digital gulal */
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background:
+        radial-gradient(circle at 15% 20%, rgba(0, 255, 255, .35), transparent 30%),
+        radial-gradient(circle at 80% 30%, rgba(255, 0, 255, .35), transparent 30%),
+        radial-gradient(circle at 50% 70%, rgba(255, 255, 0, .35), transparent 35%);
+}
+
+/* Floating tech particles */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background:
+        radial-gradient(circle at 10% 90%, rgba(0, 255, 127, .3), transparent 25%),
+        radial-gradient(circle at 90% 10%, rgba(138, 43, 226, .3), transparent 25%);
+}
+
+/* Image saturation boost */
+.card img {
+    filter: saturate(1.2);
+}
+
+
+/* =========================
+   ELECTRONICS MOBILE FIX
+========================= */
+
+@media(max-width:768px) {
+
+    /* Banner smaller */
+    .banner {
+        padding: 18px;
+        font-size: 18px;
+    }
+
+    /* Category horizontal scroll */
+    .cats {
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        padding: 10px;
+    }
+
+    .cats::-webkit-scrollbar {
+        display: none;
+    }
+
+    .cats button {
+        padding: 8px 14px;
+        font-size: 13px;
+    }
+
+    /* Products grid 2 per row */
+    #products {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        padding: 12px;
+    }
+
+    /* Cards */
+    .card {
+        padding: 8px;
+    }
+
+    /* Images */
+    .card img {
+        height: 150px;
+    }
+
+    /* Deal badge smaller */
+    .deal {
+        font-size: 10px;
+    }
+
+    /* Titles center */
+    .hot,
+    .shop-title {
+        text-align: center;
+    }
+
+}
+
+/* Extra small phones */
+
+@media(max-width:480px) {
+
+    #products {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card img {
+        height: 130px;
+    }
+
+    .timer-box {
+        font-size: 13px;
+    }
+
+}
+
+/* =========================
+   ELECTRONICS ADD TO CART PRO
+========================= */
+
+.card button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: black;
+    background: linear-gradient(135deg, #00e5ff, #0072ff, #ff00cc, #00ff95);
+    background-size: 300% 300%;
+    animation: elecCart 4s infinite;
+    position: relative;
+    overflow: hidden;
+}
+
+/* moving tech gradient */
+@keyframes elecCart {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+/* shine sweep */
+.card button::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, .6), transparent);
+    transform: translateX(-100%);
+    animation: elecShine 3s infinite;
+}
+
+@keyframes elecShine {
+    from {
+        transform: translateX(-100%)
+    }
+
+    to {
+        transform: translateX(100%)
+    }
+}
+
+/* hover glow */
+.card button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00e5ff, 0 0 25px #ff00cc;
+}
+
+/* click press */
+.card button:active {
+    transform: scale(.95);
+}
+
+/* mobile size */
+
+@media(max-width:600px) {
+    .card button {
+        font-size: 12px;
+        padding: 8px;
+    }
+}

@@ -1,0 +1,559 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f7efe5;
+}
+
+/* HERO */
+
+.furniture-hero {
+    background: linear-gradient(135deg, #8b5a2b, #c19a6b, #e6c9a8);
+    background-size: 400% 400%;
+    animation: hero 8s infinite;
+    color: white;
+    text-align: center;
+    padding: 45px;
+}
+
+/* TIMER */
+
+.timer-box {
+    text-align: center;
+    background: #3e2723;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* CATEGORIES */
+
+.cats {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.cats button {
+    border: none;
+    padding: 10px 22px;
+    border-radius: 25px;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.cats button:hover,
+.cats button.active {
+    background: #8b5a2b;
+    color: white;
+    transform: translateY(-4px);
+}
+
+/* HOT */
+
+.hot {
+    margin-left: 20px;
+    color: #8b5a2b;
+}
+
+/* PRODUCTS */
+
+#products {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 18px;
+    padding: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .18);
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.card h4 {
+    margin: 8px 0;
+}
+
+.card p {
+    color: #8b5a2b;
+    font-weight: bold;
+}
+
+/* BANNERS */
+
+.beauty-banners {
+    display: grid;
+    gap: 18px;
+    padding: 20px;
+}
+
+.beauty-banners img {
+    width: 100%;
+    border-radius: 22px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .2);
+}
+
+/* BUDGET */
+
+.budget-title {
+    margin: 20px;
+}
+
+.budget-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.budget-card {
+    height: 150px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #d7b899, #f3dbc3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #4e342e;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, .25);
+    transition: .3s;
+}
+
+.budget-card span {
+    font-size: 32px;
+}
+
+.budget-card:hover {
+    transform: translateY(-8px);
+}
+
+/* MOBILE */
+
+@media(max-width:600px) {
+    .card img {
+        height: 200px;
+    }
+
+    .budget-card {
+        height: 120px;
+    }
+}
+
+
+.price-drop {
+    width: 95%;
+    margin: 40px auto;
+    background: linear-gradient(to right, #f7c948, #f9d976);
+    padding: 30px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.price-drop h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.slider-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.card-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+}
+
+.card-container::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    min-width: 220px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    flex-shrink: 0;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.brand {
+    background: #eee;
+    padding: 8px;
+    border-radius: 10px;
+    margin-top: -20px;
+    position: relative;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+}
+
+.card p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.slide-btn {
+    background: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.left {
+    left: -15px;
+}
+
+.right {
+    right: -15px;
+}
+
+body {
+    transition: .5s;
+}
+
+.page-exit {
+    opacity: 0;
+    transform: scale(.9);
+}
+
+.page-enter {
+    animation: enter .6s ease;
+}
+
+@keyframes enter {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+
+/* =========================
+   HOLI WOOD FURNITURE THEME
+========================= */
+
+/* Soft gulal background */
+body {
+    background: linear-gradient(120deg, #fff6e5, #ffd6ec, #d4f5ff);
+}
+
+/* Hero : wood + holi mix */
+.furniture-hero {
+    background: linear-gradient(135deg, #6d4c41, #ff6f00, #00e5ff, #8e24aa);
+    background-size: 400% 400%;
+    animation: furniHoli 10s infinite;
+}
+
+@keyframes furniHoli {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+/* Timer festive */
+.timer-box {
+    background: #ffea00;
+    color: black;
+}
+
+/* Category buttons pastel */
+.cats button {
+    background: linear-gradient(135deg, #fff, #ffe7c2);
+}
+
+.cats button:hover,
+.cats button.active {
+    background: linear-gradient(135deg, #ff5252, #ffeb3b);
+    color: black;
+}
+
+/* HOT rainbow */
+.hot {
+    background: linear-gradient(90deg, #ff1744, #ff9100, #00e5ff);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Product cards soft glow */
+.card:hover {
+    box-shadow: 0 0 25px rgba(255, 145, 0, .6);
+}
+
+/* Budget cards festive wood */
+.budget-card {
+    background: linear-gradient(135deg, #ffd180, #ffab91);
+}
+
+/* Price drop section brighter */
+.price-drop {
+    background: linear-gradient(135deg, #ffcc80, #fff176, #80deea);
+}
+
+/* Banners gentle glow */
+.beauty-banners img {
+    box-shadow: 0 0 18px rgba(255, 0, 120, .35);
+}
+
+/* Holi color splashes */
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background:
+        radial-gradient(circle at 15% 30%, rgba(255, 0, 0, .25), transparent 30%),
+        radial-gradient(circle at 80% 40%, rgba(0, 255, 255, .25), transparent 30%),
+        radial-gradient(circle at 50% 75%, rgba(255, 255, 0, .25), transparent 35%);
+}
+
+/* Floating festive dots */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background:
+        radial-gradient(circle at 10% 85%, rgba(138, 43, 226, .3), transparent 25%),
+        radial-gradient(circle at 90% 15%, rgba(0, 255, 127, .3), transparent 25%);
+}
+
+/* =========================
+   FURNITURE MOBILE FIX
+========================= */
+
+@media(max-width:768px) {
+
+    /* Hero smaller */
+    .furniture-hero {
+        padding: 25px;
+    }
+
+    /* Category buttons scroll */
+    .cats {
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        padding: 10px;
+    }
+
+    .cats::-webkit-scrollbar {
+        display: none;
+    }
+
+    .cats button {
+        font-size: 13px;
+        padding: 8px 14px;
+    }
+
+    /* Products grid 2 column */
+    #products {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        padding: 12px;
+    }
+
+    /* Product cards */
+    .card {
+        min-width: auto;
+    }
+
+    .card img {
+        height: 170px;
+    }
+
+    /* Banner images */
+    .beauty-banners {
+        padding: 10px;
+    }
+
+    .beauty-banners img {
+        border-radius: 12px;
+    }
+
+    /* Budget section */
+    .budget-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .budget-card {
+        height: 110px;
+        font-size: 14px;
+    }
+
+    .budget-card span {
+        font-size: 22px;
+    }
+
+    /* Price drop */
+    .price-drop {
+        padding: 15px;
+    }
+
+    .price-drop h2 {
+        text-align: center;
+    }
+
+    /* Slider cards */
+    .card-container .card {
+        min-width: 160px;
+    }
+
+    .card-container .card img {
+        height: 200px;
+    }
+
+    /* Titles center */
+    .hot,
+    .budget-title {
+        text-align: center;
+    }
+
+}
+
+/* Extra small phones */
+
+@media(max-width:480px) {
+
+    #products {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card img {
+        height: 150px;
+    }
+
+    .budget-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* =========================
+   FURNITURE ADD TO CART PRO
+========================= */
+
+.card button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #4e342e;
+    background: linear-gradient(135deg, #ffcc80, #ff8a65, #80deea, #ce93d8);
+    background-size: 300% 300%;
+    animation: furniCart 4s infinite;
+    position: relative;
+    overflow: hidden;
+}
+
+/* moving wood + holi gradient */
+@keyframes furniCart {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+/* shine sweep */
+.card button::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, .6), transparent);
+    transform: translateX(-100%);
+    animation: furniShine 3s infinite;
+}
+
+@keyframes furniShine {
+    from {
+        transform: translateX(-100%)
+    }
+
+    to {
+        transform: translateX(100%)
+    }
+}
+
+/* hover lift */
+.card button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 145, 0, .8);
+}
+
+/* click press */
+.card button:active {
+    transform: scale(.95);
+}
+
+/* mobile size */
+
+@media(max-width:600px) {
+    .card button {
+        font-size: 12px;
+        padding: 8px;
+    }
+}

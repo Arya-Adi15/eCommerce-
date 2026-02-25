@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>A4 Mart</title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+
+<body>
+    <header>
+        <div class='logo' onclick="go('index.html')"><img src="Logo.png"></div>
+        <input id='search' placeholder='Search products'>
+        <nav>
+            <a href='index.html'>Home</a>
+            <a href='fashion.html'>Shop Now</a>
+            <a href='about.html'>About</a>
+            <a href='#'>Contact</a>
+
+            <div class="cart-container-screen" onclick="go('cart.html')">
+                <i class="cart-icon">🛒</i>
+                <span class="cartCount">2</span>
+            </div>
+        </nav>
+    </header>
+
+    <div class='slider'>WELCOME TO A4 MART</div>
+
+    <div class='cats'>
+        <div onclick="go('fashion.html')">Fashion</div>
+        <div onclick="go('mobile.html')">Mobile</div>
+        <div onclick="go('electronic.html')">Electronics</div>
+        <div onclick="go('furniture.html')">Furniture</div>
+        <div onclick="go('beauty.html')">Beauty</div>
+    </div>
+
+    <h2 class="suggest-title">Still looking for these?</h2>
+
+    <div class="suggest-wrap">
+
+
+
+        <div class="suggest" id="suggest">
+
+            <div class="card">
+                <img
+                    src="https://rukminim1.flixcart.com/image/372/360/xif0q/mobile/s/t/g/-original-imahft5gqkxzyeqa.jpeg?q=60">
+                <p>Mobiles</p>
+            </div>
+
+            <div class="card">
+                <img
+                    src="https://rukminim1.flixcart.com/image/372/360/xif0q/jean/9/j/m/34-united243-united-denim-original-imah39eyfgams87t.jpeg?q=60">
+                <p>Men's Jeans</p>
+            </div>
+
+            <div class="card">
+                <img
+                    src="https://rukminim1.flixcart.com/image/372/360/xif0q/lehenga-choli/t/u/c/free-half-sleeve-morpankh-purpal-ethnicset-original-imahcfsvtp3ja2fh.jpeg?q=60">
+                <p>Women's Lehenga Cholis</p>
+            </div>
+
+            <div class="card">
+                <img
+                    src="https://rukminim1.flixcart.com/image/372/360/kkimfm80/normal-photo-frame/5/3/u/black-photo-frames-ag-8-ag-crafts-original-imafzuhagzkfbkkp.jpeg?q=60">
+                <p>Photo Frames</p>
+            </div>
+
+            <div class="card">
+                <img
+                    src="https://rukminim1.flixcart.com/image/372/360/xif0q/slipper-flip-flop/w/d/l/7-ff-375gry-375gr-footup-grey-green-original-imahgga6fe72hat9.jpeg?q=60">
+                <p>Men's Slippers</p>
+            </div>
+
+            <div class="card">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/u/5/k/-original-imagp6skrv3mma3a.jpeg?q=70">
+                <p>Ear Buds</p>
+            </div>
+
+            <div class="card">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/dress/y/q/r/-original-imahff9hkv5bqwjv.jpeg?q=70">
+                <p>Tops</p>
+            </div>
+
+            <div class="card">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/lehenga-choli/i/d/z/free-na-ariya-d2-pavitraa-sarees-original-imah28mbh4quahcz.jpeg?q=70">
+                <p>Lehenga</p>
+            </div>
+
+        </div>
+
+        <h2 class="sug-title">
+            Suggested For You
+
+        </h2>
+
+        <div class="sug-wrap">
+            <div class="sug" id="sug">
+
+                <div class="prod" onclick="go('lehenga.html')">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/lehenga-choli/e/h/x/free-half-sleeve-rk4077-bittu-st-beige-unstitch-mr-y-original-imah7szazjvsz2ep.jpeg?q=70">
+                    <h4>Designer Lehenga</h4>
+                    <p class="price">₹600 <span>1,999</span></p>
+                    <div class="deal">Hot Deal</div>
+                </div>
+
+                <div class="prod" onclick="go('lehenga.html')">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/lehenga-choli/f/d/1/free-sleeveless-black-eid-lehenga-ai-tf-kedar-fab-original-imahfwnztgkrgz3p.jpeg?q=70">
+                    <h4>Embroidered Semi</h4>
+                    <p class="price">₹986 <span>2,499</span></p>
+                    <div class="deal">Hot Deal</div>
+                </div>
+
+                <div class="prod" onclick="go('lehenga.html')">
+                    <span class="rate">4.2 ★</span>
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/lehenga-choli/y/y/i/free-half-sleeve-rk4051-aparna-kv-babypink-unstitch-shree-original-imah7rjstpmj2xbb.jpeg?q=70">
+                    <h4>Self Design Lehenga</h4>
+                    <p class="price">₹916 <span>2,999</span></p>
+                    <div class="deal">Hot Deal</div>
+                </div>
+
+                <div class="prod" onclick="go('watch.html')">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/watch/u/d/e/1-clsscpnk-carlton-london-women-original-imahhy5u5yf5adqy.jpeg?q=70">
+                    <h4>Women Watches</h4>
+                    <p class="price">₹586 <span>1,999</span></p>
+                    <div class="deal">Hot Deal</div>
+                </div>
+
+                <div class="prod" onclick="go('Saree.html')">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/sari/r/i/7/free-satin-fendy-vivan-fab-unstitched-original-imahjh4zahyvxkyh.jpeg?q=70">
+                    <h4>Boxwin Saree</h4>
+                    <p class="price">₹732 <span>1,499</span></p>
+                    <div class="deal">Hot Deal</div>
+                </div>
+
+                <div class="prod" onclick="go('dresses.html')">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/dress/y/q/r/-original-imahff9hkv5bqwjv.jpeg?q=70">
+                    <h4>Women Fit And Flare Pink Dress</h4>
+                    <p class="price">₹941 <span>2,599</span></p>
+                    <div class="deal">Hot Deal</div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <h2 class="sp-title">Sponsored</h2>
+
+    <div class="sponsored">
+
+        <div class="sp-card" onclick="go('headphone.html')">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/k/i/o/-original-imagp6skdxptyrjt.jpeg?q=70">
+            <h4>From ₹1,099</h4>
+            <p>Limited time deal</p>
+        </div>
+
+        <div class="sp-card" onclick="go('watch.html')">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/smartwatch/m/q/u/-original-imahhybhenmujbcz.jpeg?q=70">
+            <h4>Launch tonight</h4>
+            <p>Mustang smartwatch</p>
+        </div>
+
+        <div class="sp-card" onclick="go('perfume.html')">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/perfume/c/c/f/100-hamilton-perfume-premium-long-lasting-eau-de-parfum-denver-original-imahf8k5zhubhwq3.jpeg?q=70">
+            <h4>Up to 80% Off</h4>
+            <p>Fresh & strong</p>
+        </div>
+
+        <div class="sp-card" onclick="go('shoes.html')">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/n/j/1/10-gywh2024-10-neakser-white-original-imahc9vdnjxyyk2z.jpeg?q=70">
+            <h4>Min 50% Off</h4>
+            <p>Style every step</p>
+        </div>
+
+        <div class="sp-card" onclick="go('shoes.html')">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shopsy-shoe/f/e/n/6-fc-shocks-6-hotstyle-green-white-original-imahguf8vmpgahzf.jpeg?q=70">
+            <h4>Min. 50% Off</h4>
+            <p>Walking shoes</p>
+        </div>
+
+        <div class="sp-card" onclick="go('perfume.html')">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/deodorant/z/b/v/300-paradise-no-gas-2-body-spray-fogg-women-original-imah29zpza8ggyc9.jpeg?q=70">
+            <h4>Up to 40% Off</h4>
+            <p>Lasting freshness</p>
+        </div>
+
+    </div>
+
+    <div class="lehenga-wrap" onclick="go('lehenga.html')" style="cursor: pointer;">
+
+        <div class="lehenga-head">
+            <h2>Shop for Women's Lehenga Cholis</h2>
+            <button onclick="go('lehenga.html')">→</button>
+        </div>
+
+        <div class="lehenga-row" id="lehenga">
+
+            <div class="leh-card">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/lehenga-choli/e/1/4/free-na-kh143-lahenga-saree-plain-firozi-royal-2-pro-texofab-original-imagrfq3cruzpufv.jpeg?q=70">
+                <p>Top Quality<br><b>Plus – Products</b></p>
+            </div>
+
+            <div class="leh-card">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/lehenga-choli/w/q/4/free-3-4-sleeve-new-designer-best-lehenga-choli-for-indian-queen-original-imahem97gj8m47gu.jpeg?q=70">
+                <p>Top Rated<br><b>4 Stars and Above</b></p>
+            </div>
+
+            <div class="leh-card">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/lehenga-choli/c/g/x/xs-3-4-sleeve-choli-zikzek-pink-216-xs-kinjo-original-imahaxvzewxyauyr.jpeg?q=70">
+                <p>Upto 70% off<br><b>Top Rated</b></p>
+            </div>
+
+            <div class="leh-card">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/lehenga-choli/1/0/1/free-short-sleeve-fp-lc70-f-plus-fashion-original-imah2tvhyyg3cg5f.jpeg?q=70">
+                <p>Most Loved<br><b>Top Collection</b></p>
+            </div>
+
+        </div>
+
+    </div>
+    <footer class="site-footer">
+
+        <div class="footer-grid">
+
+            <div>
+                <h3>A4 Mart</h3>
+                <p>Your one-stop online shop for fashion, electronics & daily needs.</p>
+
+                <div class="social">
+                    <span>🌐</span>
+                    <span>📘</span>
+                    <span>📸</span>
+                    <span>🐦</span>
+                </div>
+            </div>
+
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fashion.html">Shop</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Categories</h4>
+                <ul>
+                    <li>Fashion</li>
+                    <li>Mobiles</li>
+                    <li>Electronics</li>
+                    <li>Furniture</li>
+                    <li>Beauty</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Customer Support</h4>
+                <ul>
+                    <li>Help Center</li>
+                    <li>Returns</li>
+                    <li>Shipping</li>
+                    <li>Track Order</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Contact</h4>
+                <p>📍 India</p>
+                <p>📞 +91 90000 00000</p>
+                <p>✉ support@a4mart.com</p>
+
+                <input type="email" placeholder="Your email">
+                <button>Subscribe</button>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 A4 Mart — All Rights Reserved
+        </div>
+
+    </footer>
+
+    <script src='data.js'></script>
+    <script src='main.js'></script>
+</body>
+
+</html>

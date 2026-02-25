@@ -1,0 +1,870 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f4f6fb;
+}
+
+/* HEADER */
+
+.fashion-head {
+    text-align: center;
+    padding: 25px;
+    background: linear-gradient(135deg, #ff512f, #dd2476);
+    color: white;
+}
+
+#timer {
+    background: black;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
+/* CATEGORIES */
+
+.cats {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.cats button {
+    border: none;
+    padding: 10px 22px;
+    border-radius: 30px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.cats button:hover {
+    background: #ff2d7a;
+    color: white;
+    transform: translateY(-4px);
+}
+
+/* PRODUCTS */
+
+#products {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, .15);
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 306px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.card h4 {
+    margin: 8px 0;
+}
+
+.card p {
+    color: green;
+    font-weight: bold;
+}
+
+/* MOBILE */
+
+@media(max-width:600px) {
+    .card img {
+        height: 267px;
+    }
+}
+
+/* EXTRA EFFECTS */
+
+.fashion-head {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(135deg, #ff512f, #dd2476);
+    color: white;
+    animation: gradientMove 6s infinite alternate;
+}
+
+@keyframes gradientMove {
+    from {
+        filter: brightness(1);
+    }
+
+    to {
+        filter: brightness(1.2);
+    }
+}
+
+#timer {
+    background: black;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* ACTIVE CATEGORY */
+.cats button.active {
+    background: #ff2d7a;
+    color: white;
+}
+
+/* HOT DEAL BADGE */
+.card {
+    position: relative;
+}
+
+.card::before {
+    content: "🔥 Hot Deal";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: red;
+    color: white;
+    font-size: 12px;
+    padding: 3px 8px;
+    border-radius: 8px;
+}
+
+/* ADD BUTTON STYLE */
+.card button {
+    margin-top: 8px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 20px;
+    background: #ff2d7a;
+    color: white;
+    cursor: pointer;
+}
+
+.fest-title {
+    margin: 20px;
+    font-size: 24px;
+}
+
+/* ROW */
+
+.fest-row {
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.fest-row::-webkit-scrollbar {
+    display: none;
+}
+
+/* CARD */
+
+.fest-card {
+    min-width: 170px;
+    background: linear-gradient(135deg, #fff3b0, #ffd95a);
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, .2);
+    text-align: center;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.fest-card:hover {
+    transform: translateY(-8px);
+}
+
+.fest-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.fest-card p {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+/* MOBILE */
+
+@media(max-width:600px) {
+    .fest-card {
+        min-width: 140px;
+    }
+
+    .fest-card img {
+        height: 170px;
+    }
+}
+
+.budget-title2 {
+    margin: 20px;
+    font-size: 24px;
+}
+
+/* GRID */
+
+.budget2-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 140px;
+}
+
+/* CARD */
+
+.budget2-card {
+    position: relative;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    transition: .4s;
+}
+
+.budget2-card:hover {
+    transform: translateY(-8px);
+}
+
+/* IMAGE */
+
+.budget2-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .4s;
+}
+
+.budget2-card:hover img {
+    transform: scale(1.05);
+}
+
+/* TEXT */
+
+.budget2-text {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-weight: bold;
+    font-size: 22px;
+    color: black;
+    background: rgba(255, 255, 255, .7);
+    padding: 10px 15px;
+    border-radius: 12px;
+}
+
+.budget2-text span {
+    font-size: 38px;
+}
+
+/* MOBILE */
+
+@media(max-width:600px) {
+    .budget2-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .budget2-text span {
+        font-size: 30px;
+    }
+}
+
+.forecast-title {
+    text-align: center;
+    font-size: 32px;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+
+/* WRAP */
+
+.forecast-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 20px;
+}
+
+/* CARD */
+
+.forecast-card {
+    position: relative;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .25);
+    cursor: pointer;
+    transition: .4s;
+}
+
+.forecast-card:hover {
+    transform: translateY(-6px);
+}
+
+/* IMAGE */
+
+.forecast-card img {
+    width: 100%;
+    height: 505px;
+    object-fit: cover;
+    transition: .4s;
+}
+
+.forecast-card:hover img {
+    transform: scale(1.05);
+}
+
+/* TEXT */
+
+.forecast-text {
+    position: absolute;
+    bottom: 40px;
+    color: white;
+}
+
+.forecast-text.left {
+    left: 40px;
+}
+
+.forecast-text.right {
+    right: 40px;
+    text-align: right;
+}
+
+.forecast-text h3 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.forecast-text p {
+    font-size: 18px;
+}
+
+/* DOT */
+
+.forecast-dot {
+    width: 40px;
+    height: 6px;
+    background: black;
+    border-radius: 10px;
+    margin: 0 auto 20px;
+}
+
+/* MOBILE */
+
+@media(max-width:600px) {
+
+    .forecast-card img {
+        height: 220px;
+    }
+
+    .forecast-text h3 {
+        font-size: 22px;
+    }
+
+    .forecast-text p {
+        font-size: 14px;
+    }
+
+    .forecast-text.left {
+        left: 20px;
+    }
+
+    .forecast-text.right {
+        right: 20px;
+    }
+}
+
+.clear-title {
+    margin: 20px;
+    font-size: 22px;
+}
+
+/* ROW */
+
+.clear-row {
+    display: flex;
+    gap: 18px;
+    padding: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.clear-row::-webkit-scrollbar {
+    display: none;
+}
+
+/* CARD */
+
+.clear-card {
+    min-width: 190px;
+    background: #8a5c3b;
+    padding: 10px;
+    border-radius: 22px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, .25);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.clear-card:hover {
+    transform: translateY(-8px);
+}
+
+/* INNER WHITE */
+
+.clear-card img {
+    width: 100%;
+    height: 288px;
+    object-fit: cover;
+    border-radius: 15px;
+    background: white;
+    padding: 10px;
+}
+
+/* TEXT */
+
+
+
+/* MOBILE */
+
+@media(max-width:600px) {
+    .clear-card {
+        min-width: 150px;
+    }
+
+    .clear-card img {
+        height: 160px;
+    }
+}
+
+body {
+    transition: .5s;
+}
+
+.page-exit {
+    opacity: 0;
+    transform: scale(.9);
+}
+
+.page-enter {
+    animation: enter .6s ease;
+}
+
+@keyframes enter {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* =========================
+   HOLI THEME – FASHION PAGE
+========================= */
+
+/* Full page soft gulal */
+body {
+    background: linear-gradient(120deg, #fff1eb, #ace0f9);
+}
+
+/* Header animated holi gradient */
+.fashion-head {
+    background: linear-gradient(135deg, #ff1744, #ff9100, #00e5ff, #76ff03, #d500f9);
+    background-size: 400% 400%;
+    animation: holiHead 8s infinite;
+}
+
+@keyframes holiHead {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+/* Category buttons colorful */
+.cats button {
+    background: linear-gradient(135deg, #fff, #ffe0f0);
+}
+
+.cats button:hover {
+    background: linear-gradient(135deg, #ff0080, #ffea00);
+    color: black;
+}
+
+/* Product glow */
+.card:hover,
+.fest-card:hover,
+.clear-card:hover,
+.budget2-card:hover,
+.forecast-card:hover {
+    box-shadow: 0 0 20px rgba(255, 0, 120, .6);
+}
+
+/* Holi splash overlay */
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background:
+        radial-gradient(circle at 20% 30%, rgba(255, 0, 0, .25), transparent 30%),
+        radial-gradient(circle at 70% 40%, rgba(0, 255, 255, .25), transparent 30%),
+        radial-gradient(circle at 50% 70%, rgba(255, 255, 0, .25), transparent 35%);
+}
+
+/* Fest cards extra color */
+.fest-card {
+    background: linear-gradient(135deg, #fff176, #ff8a65);
+}
+
+/* Clearance cards holi shade */
+.clear-card {
+    background: linear-gradient(135deg, #7c4dff, #18ffff);
+}
+
+/* Budget cards border glow */
+.budget2-card {
+    border: 3px solid rgba(255, 0, 120, .4);
+}
+
+/* Forecast title festive */
+.forecast-title {
+    background: linear-gradient(90deg, #ff1744, #ff9100, #00e5ff);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Timer festive */
+#timer {
+    background: #ffea00;
+    color: black;
+}
+
+/* Floating color dots */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background:
+        radial-gradient(circle at 10% 80%, rgba(138, 43, 226, .3), transparent 25%),
+        radial-gradient(circle at 90% 20%, rgba(0, 255, 127, .3), transparent 25%);
+}
+
+/* ===== EXTRA NEON HOLI LAYER ===== */
+
+/* Glass effect on product cards */
+.card,
+.fest-card,
+.clear-card,
+.budget2-card,
+.forecast-card {
+    backdrop-filter: blur(6px);
+    background: rgba(255, 255, 255, .75);
+}
+
+/* Neon hover */
+.card:hover {
+    box-shadow: 0 0 12px #ff00ff, 0 0 25px #00e5ff;
+}
+
+/* Fashion head shimmer */
+.fashion-head {
+    position: relative;
+    overflow: hidden;
+}
+
+.fashion-head::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, .4), transparent);
+    animation: shine 3s infinite;
+}
+
+@keyframes shine {
+    from {
+        transform: translateX(-100%)
+    }
+
+    to {
+        transform: translateX(100%)
+    }
+}
+
+/* Category pulse */
+.cats button {
+    animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 rgba(255, 0, 150, 0)
+    }
+
+    50% {
+        box-shadow: 0 0 15px rgba(255, 0, 150, .6)
+    }
+
+    100% {
+        box-shadow: 0 0 0 rgba(255, 0, 150, 0)
+    }
+}
+
+/* Festival floating glow */
+body::marker {
+    display: none;
+}
+
+body {
+    background-size: 200% 200%;
+    animation: bgshift 12s infinite alternate;
+}
+
+@keyframes bgshift {
+    from {
+        background-position: 0% 0%
+    }
+
+    to {
+        background-position: 100% 100%
+    }
+}
+
+/* Forecast cards cinematic */
+.forecast-card img {
+    filter: saturate(1.2) contrast(1.1);
+}
+
+/* Budget cards glow edge */
+.budget2-card {
+    box-shadow: inset 0 0 20px rgba(255, 0, 120, .3);
+}
+
+/* Hot deal badge pop */
+.card::before {
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(1.2)
+    }
+}
+
+/* =========================
+   FASHION MOBILE FIX
+========================= */
+
+@media(max-width:768px) {
+
+    /* Header text */
+    .fashion-head {
+        padding: 18px;
+        font-size: 18px;
+    }
+
+    /* Category buttons wrap */
+    .cats {
+        justify-content: flex-start;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    /* Smaller buttons */
+    .cats button {
+        padding: 8px 14px;
+        font-size: 13px;
+    }
+
+    /* Product grid 2 columns */
+    #products {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        padding: 12px;
+    }
+
+    /* Product images */
+    .card img {
+        height: 200px;
+    }
+
+    /* Fest cards */
+    .fest-card {
+        min-width: 140px;
+    }
+
+    /* Budget section padding */
+    .budget2-grid {
+        padding: 20px;
+    }
+
+    /* Forecast images */
+    .forecast-card img {
+        height: 240px;
+    }
+
+    /* Clearance cards */
+    .clear-card {
+        min-width: 140px;
+    }
+
+    /* Titles center */
+    .fest-title,
+    .budget-title2,
+    .clear-title,
+    .forecast-title {
+        text-align: center;
+    }
+
+    /* Forecast text smaller */
+    .forecast-text h3 {
+        font-size: 20px;
+    }
+
+    .forecast-text p {
+        font-size: 13px;
+    }
+
+}
+
+/* Extra small phones */
+
+@media(max-width:480px) {
+
+    /* Single column products */
+    #products {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Smaller cards */
+    .card {
+        padding: 6px;
+    }
+
+    /* Images */
+    .card img {
+        height: 170px;
+    }
+
+    /* Buttons */
+    .card button {
+        font-size: 12px;
+    }
+
+    /* Category scroll */
+    .cats {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+
+    /* Hide scrollbar */
+    .cats::-webkit-scrollbar {
+        display: none;
+    }
+
+}
+
+/* =========================
+   FASHION ADD TO CART PRO
+========================= */
+
+.card button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #ff1744, #ff9100, #00e5ff, #d500f9);
+    background-size: 300% 300%;
+    animation: fashionCart 4s infinite;
+    position: relative;
+    overflow: hidden;
+}
+
+/* moving gradient */
+@keyframes fashionCart {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+/* shine swipe */
+.card button::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, .6), transparent);
+    transform: translateX(-100%);
+    animation: cartShine 3s infinite;
+}
+
+@keyframes cartShine {
+    from {
+        transform: translateX(-100%)
+    }
+
+    to {
+        transform: translateX(100%)
+    }
+}
+
+/* hover pop */
+.card button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 0, 120, .8);
+}
+
+/* click bounce */
+.card button:active {
+    transform: scale(.95);
+}
+
+/* mobile size */
+@media(max-width:600px) {
+    .card button {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
